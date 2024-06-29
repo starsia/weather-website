@@ -1,0 +1,46 @@
+/* The dot (.) selector targets elements by class, while the hash (#) selector targets elements by id. */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Scroll with be smooth upon clicking of navigation links */
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Now both nav and the nav-links class are flex boxes */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  /* Flexing along the main axis */
+  justify-content: space-around;
+  /* Flexing along the cross axis */
+  align-items: center;
+}
+
+.nav-links {
+  gap: 20px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
